@@ -43,7 +43,10 @@ for (let link of links) {
         document.getElementById(elementID).scrollIntoView({
             behavior: 'smooth',
             block: 'start',
-        })
+        });
+        burger.classList.toggle('active');
+        document.querySelector('.header__menu').classList.toggle('active');
+        document.body.classList.toggle('lock');
     })
 }
 
